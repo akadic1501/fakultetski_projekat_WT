@@ -9,13 +9,13 @@
         <p>Ovdje možete donirati putem PayPal-a. Unesite iznos koji želite donirati i kliknite "Plati." </p>
 
         <!-- PayPal dugme sa unosom iznosa sa strane donatora (cmd = tip transakcija, _donations = za dugme za donacije)-->
-        <form action=""https://www.paypal.com/sdk/js?client-id=BAAwh3YgoXJje3vIJ7NwdVYy12fIVSYu72wJobC7mGs0-VBquYSNFS6_mvKAEwcKPCkVW7ZzlwR66J1A54&components=hosted-buttons&disable-funding=venmo&currency=EUR" method="post" target="_top">
+        <form action="https://www.sandbox.paypal.com/ncp/payment/7MMJGECVLQXD8" method="post" target="_top">
             <input type="hidden" name="cmd" value="_donations"> 
 
             <!-- PayPal mail - podaci se šalju PayPalu (hidden) (business = mail koji prima uplate, domena=mail tog naloga, item_name = opis usluge)-->
-            <input type="hidden" name="business" value="amilakadic2001@gmail.com">
+            <input type="hidden" name="business" value="sb-nxc7a17080112@business.example.com">
             <input type="hidden" name="item_name" value="Donacije za Gazu">
-            <input type="hidden" name="EUR" value="Euro">
+            <input type="hidden" name="currency_code" value="Euro">
 
             <!-- PayPal dugme gdje donator unosi iznos koji će donirati (amount = iznos koji donator plaća, obavezno je da PayPal zna koliko je to) -->
             <label for="amount">Unesite iznos (Euro): </label>
@@ -26,4 +26,5 @@
         </form>
     </body>
 </html>
+
 
